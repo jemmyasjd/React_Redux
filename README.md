@@ -54,3 +54,17 @@ Redux toolkit Methods:
 
 -> **action.payload** : it contains change what we had done through dispatcher.
 
+-------------------
+
+Api calling methods: 
+
+-> **createasyncThunk** : used to create the action of fetching the data which take ("name", callback function) which trigger when action dispatch. 
+
+-> Addtionally we have 
+
+    extraReducers: (builder) => {
+    builder.addCase(fetchTodos.pending, (state, action) => {
+      state.isLoading = true;
+    }); 
+
+    in createSlice()
