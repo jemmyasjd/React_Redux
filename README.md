@@ -18,7 +18,6 @@
 
 ![image](https://github.com/jemmyasjd/React_Redux/assets/118959810/b163d3d4-4b26-4abb-aa03-0043d7ad85eb)
 
-
 -> Whenever we make changes to the UI it goes to the it make call to the event dispatcher which in return create the action and send it to the redux store. Redux store update the value with the current value and then send the updated value to all the components that has subscribed for the change.
 
 
@@ -40,4 +39,18 @@ however this all methods are just for the basic information about how the redux 
 
 
 -------------------------------------------------------------------
+
+Redux toolkit Methods: 
+
+-> **configureStore**: use to create the redux store using redux toolkit.
+
+-> **createSlice** : In redux toolkit we make the reducer using the concept of sicer. this method is used to create the slice. Which take name,initital state and reducer as a object parameter. In reducer we make the methods which take state and action as a input to change the state based on the action. 
+
+-> **createSelector** : use to create the selector for easy convinence 
+
+-> **useDispatch** : in redux toolkit we dont need to mention explicitely we just directly pass action from the slice as a parameter.
+
+-> **useSelector from react-redux lib**: use to select the value from the redux store.
+
+-> **action.payload** : it contains change what we had done through dispatcher.
 
